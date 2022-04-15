@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <p>{{ name }}</p>         <!-- 取全部列表元素 -->
+    <p>{{ name.0 }}</p>       <!-- 取name的第一个元素 -->
+    <p>{{ person }}</p>
+    <p>{{ person.name }}</p>
+
+    <!--过滤器-->
+    <p>{{ person.name|upper }}</p>     <!--将名字变成大写-->
+
+    <!--过滤器-->
+    <p>将第一个元素变成大写{{ name|first|upper }}</p>      <!--将第一个元素变成大写-->
+    <p>将第一个元素变成小写{{ name|first|lower }}</p>      <!--将第一个元素变成小写-->
+    <h1>{{ hello }}</h1>
+</head>
+<body>
+
+</body>
+</html>
